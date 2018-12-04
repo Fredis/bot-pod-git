@@ -16,3 +16,6 @@ Bot.on :message do |message|
 end
 
 
+Bot.on :message do |message|
+  message.reply(text: 'yoyoyoyo')
+end
