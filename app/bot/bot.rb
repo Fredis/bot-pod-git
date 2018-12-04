@@ -16,4 +16,4 @@ end
 
 @response = HTTParty.get("https://graph.facebook.com/#{@sender_id}?fields=first_name,last_name,profile_pic&access_token=#{ENV['ACCESS_TOKEN']}")
 puts '///// RESPONSE /////'
-puts response
+puts @response
