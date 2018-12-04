@@ -16,6 +16,6 @@ Bot.on :message do |message|
 end
 
 
-Bot.on :message do |message|
-  message.reply(text: 'yoyoyoyo')
+Bot.on :message do |messageahahahah|
+  messageahahahah.reply(text: 'yoyoyoyo')
 end
