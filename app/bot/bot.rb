@@ -7,15 +7,7 @@ Bot.on :message do |message|
 	puts '///// RESPONSE /////'
 	puts @response
 
-  message.reply(text: "Salut #{@response['first_name']}")
-  puts '///////////'
-  puts 'Message Sender :'
-  puts message.sender
-  puts '///////////'
-  puts '///////////'
-  puts 'Message Seq :'
-  puts message.seq
-  puts '///////////'
+  message.reply(text: "Salut #{@response['first_name']} !")
   
 end
 
