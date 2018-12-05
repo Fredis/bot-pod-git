@@ -6,7 +6,7 @@ Bot.on :message do |message|
   puts '///////////'
   puts 'Message Sender :'
   puts message.sender
-  puts @sender_id = message.sender[:id]
+  puts @sender_id = message.sender["id"]
   puts '///////////'
   puts '///////////'
   puts 'Message Seq :'
