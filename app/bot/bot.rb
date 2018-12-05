@@ -6,13 +6,14 @@ Bot.on :message do |message|
   puts '///////////'
   puts 'Message Sender :'
   puts message.sender
+  @sender_id = message.sender
   puts '///////////'
   puts '///////////'
   puts 'Message Seq :'
-  puts message.seq
+  puts message.seq.class
   puts '///////////'
 
-	@response = HTTParty.get("https://graph.facebook.com/" + message.sender + "?fields=first_name,last_name,profile_pic&access_token=#{ENV['ACCESS_TOKEN']}")
+	@response = HTTParty.get("https://graph.facebook.com/2134764759913485?fields=first_name,last_name,profile_pic&access_token=#{ENV['ACCESS_TOKEN']}")
 	puts '///// RESPONSE /////'
 	puts @response
   
